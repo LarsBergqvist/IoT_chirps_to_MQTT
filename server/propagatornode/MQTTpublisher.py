@@ -13,7 +13,7 @@ class MQTTpublisher:
         # Initialize the client that should connect to the Mosquitto broker
         client = mqtt.Client()
         connOK=False
-        print("Connecting to" + self.brokerIP + " on port " + str(self.brokerPort))
+        print("Connecting to " + self.brokerIP + " on port " + str(self.brokerPort))
         while(connOK == False):
             try:
                 print("try connect")
@@ -25,6 +25,5 @@ class MQTTpublisher:
 
         client.publish(topic,message)
         print("Publish done")
-#        time.sleep(5)
         client.disconnect()
     

@@ -1,3 +1,9 @@
+#
+# A propagator node in an MQTT System
+# It listens on messages/chirps via 433MHz radio and translates them to
+# MQTT packages that are published over TCP/IP to a broker
+#
+
 from measurementtype import MeasurementType
 from MQTTpublisher import MQTTpublisher
 from radiolistener import RadioListener
