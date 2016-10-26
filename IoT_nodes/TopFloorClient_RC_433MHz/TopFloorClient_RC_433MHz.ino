@@ -1,5 +1,6 @@
 //
-// An Arduino sketch for an IoT node that sends sensor values vith 433 MHz radio
+// An Arduino sketch for an IoT node that broadcasts sensor values via 
+// 433 MHz radio signals
 // The RCSwitch library is used for the transmissions
 // The Narcopleptic library is used for power save during delay
 // Sensor values are fetched from an BPM180/085 sensor via i2C
@@ -26,7 +27,6 @@ Adafruit_BMP085 bmp; // pin 4, SDA (data), pin 5, SDC (clock)
 #define BMP_PRESSURE_ID     2
 RCSwitch transmitter = RCSwitch();
 
-#define SLEEP_SECONDS 60*15
 void setup() 
 {
   Serial.begin(9600);
