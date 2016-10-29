@@ -18,7 +18,7 @@
 // Sensor setup
 // The BMP085 module measure ait pressure and temperature and operates via i2C
 //
-Adafruit_BMP085 bmp; // pin 4, SDA (data), pin 5, SDC (clock)
+Adafruit_BMP085 bmp; // pin 4, SDA (data), pin 5, SLC (clock)
 
 //
 // Data transmission setup
