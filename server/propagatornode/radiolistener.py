@@ -70,8 +70,11 @@ class RadioListener:
         return message
 
     def getMeasurementTypeFromId(self,typeID):
-        measurementType = next(i for i in self.validMeasurementTypes if i.id == typeID)
-        return measurementType
+        for type in self.validMeasurementTypes:
+	    if (type.id == typeID):
+                return type
+
+        return None
     
     def getLatestMessage(self):
         return self.latestMessage
